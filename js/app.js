@@ -18,7 +18,7 @@ window.onload = function(){
 		})
 		request.addEventListener('click', function(){
 			modal2.style.display = 'inline'
-			request.style.display = 'none'
+			//request.style.display = 'none'
 		})
 	}, 1000)
 }

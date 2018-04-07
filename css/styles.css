@@ -1,5 +1,6 @@
 body{
 	margin: 0px;
+	font-family: 'Asap', sans-serif;
 }
 
 /* Loading */
@@ -37,6 +38,7 @@ body{
 
 #bw{
 	float: left;
+	font-weight: bolder;
 }
 
 .topnav a {
@@ -55,11 +57,18 @@ body{
 }
 
 #picThing{
+	background-color: black;
 	width: calc(100vw);
 	height: calc(50vh);
-	border-style: solid;
-	border-width: 15px;
-	border-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#pic{
+	background-image: url("../assets/flowers.jpg");
+	height: 90%;
+	width: 99%;
 }
 
 #bw-container{
