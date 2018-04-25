@@ -10,10 +10,9 @@ window.onload = function(){
 		//console.log(modal.style.display)
 
 		var passwordHelp = document.getElementById('passwordGen');
-		var sub = document.getElementById('logSub');
+		var pass = document.getElementById('password');
 
 		passwordHelp.addEventListener('click', function(){
-		var pass = document.getElementById('password');
 		var adj = ['fluffy', 'hairy', 'soft', 'squishy', 'slick', 'goey'];
 		var stuff = ['panda', 'horse', 'cake', 'dino', 'backpack', 'mountian'];
 		var num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -24,6 +23,19 @@ window.onload = function(){
 		var randomNum4 = Math.floor(Math.random() * special.length);
 		pass.value = adj[randomNum1] + stuff[randomNum2] + num[randomNum3] + special[randomNum4];
 		})
+
+
+		var submit = document.getElementById('logSub');
+		var user = document.getElementById('username');
+		submit.addEventListener('click', function(){
+			//console.log(user.value);
+			if (user.value != "" && pass.value != "") {
+				console.log('yeet')
+				modal.style.display = 'none';
+			}else{
+				console.log('yeah no.')
+			}
+		})
 	})
 
 	setTimeout(function(){
@@ -31,7 +43,7 @@ window.onload = function(){
 		var mainContainer = document.getElementById('main-container');
 		loadingContainer.style.display = 'none';	
 		mainContainer.style.display = 'inline';
-	}, 1000);
+	}, 3000);
 	//change to 3000 later
 
 	setTimeout(function(){
@@ -47,5 +59,5 @@ window.onload = function(){
 			modal2.style.display = 'inline'
 			request.style.display = 'none'
 		})
-	}, 1000)
+	}, 4000)
 }
